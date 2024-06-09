@@ -1,0 +1,236 @@
+{
+  "config": "{\"version\":\"5.54\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU05\",\"version\":\"5.54\",\"type\":2},\"customTheme\":{\"name\":\"Solar\",\"version\":\"5.54\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "alpha574647805626991.png",
+            "path": "alpha574647805626991.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU05",
+            "path": "BaseThemes/CY24SU05.json",
+            "type": 202
+          },
+          {
+            "name": "Solar",
+            "path": "BuiltInThemes/Solar.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Sales Overview",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 900.00,
+      "name": "d59e88194ea05074bd10",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"09e4e305eaab11d56e7e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1086.6666666666667,\"y\":26.666666666666668,\"z\":4000,\"width\":193.33333333333334,\"height\":115,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales in USD.Median\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Median\"},\"Name\":\"Sales in USD.Median\",\"NativeReferenceName\":\"Median\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Median\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.4}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 115.00,
+          "width": 193.33,
+          "x": 1086.67,
+          "y": 26.67,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"0ae0bfee0757e006432a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":435,\"y\":226.66666666666669,\"z\":1000,\"width\":845,\"height\":350,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sales in USD.Product Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Sales in USD.Quantity Purchased)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Product Name\"},\"Name\":\"Sales in USD.Product Name\",\"NativeReferenceName\":\"Product Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Quantity Purchased\"}},\"Function\":0},\"Name\":\"Sum(Sales in USD.Quantity Purchased)\",\"NativeReferenceName\":\"Sum of Quantity Purchased\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Quantity Purchased\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Quantity Sold by Product.'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 350.00,
+          "width": 845.00,
+          "x": 435.00,
+          "y": 226.67,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"135190d80d8b0b8aba33\",\"layouts\":[{\"id\":0,\"position\":{\"x\":746.6666666666667,\"y\":33.333333333333336,\"z\":5000,\"width\":170,\"height\":100,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Sales in USD. Stock  )\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\" Stock  \"}},\"Function\":0},\"Name\":\"Sum(Sales in USD. Stock  )\",\"NativeReferenceName\":\"Sum of  Stock  \"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\" Stock  \"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.4}}}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.6}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.00,
+          "width": 170.00,
+          "x": 746.67,
+          "y": 33.33,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"2d57e1d05ccb50b9187d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":226.66666666666669,\"z\":0,\"width\":435,\"height\":350,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sales in USD.Country Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Sales in USD. Loyalty Points)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Country Name\"},\"Name\":\"Sales in USD.Country Name\",\"NativeReferenceName\":\"Country Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\" Loyalty Points\"}},\"Function\":0},\"Name\":\"Sum(Sales in USD. Loyalty Points)\",\"NativeReferenceName\":\"Sum of  Loyalty Points\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\" Loyalty Points\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Loyalty Points by Country.'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 350.00,
+          "width": 435.00,
+          "x": 0.00,
+          "y": 226.67,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"3aa68311612ecc80ebda\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":141.66666666666669,\"z\":7000,\"width\":363.33333333333337,\"height\":60,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales in USD.Country Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Country Name\"},\"Name\":\"Sales in USD.Country Name\",\"NativeReferenceName\":\"Country Name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 363.33,
+          "x": 0.00,
+          "y": 141.67,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"806683ea21e3c333ce44\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":576.6666666666667,\"z\":2000,\"width\":435,\"height\":323.33333333333337,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sales in USD.Country Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sales in USD.Median\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Country Name\"},\"Name\":\"Sales in USD.Country Name\",\"NativeReferenceName\":\"Country Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Median\"},\"Name\":\"Sales in USD.Median\",\"NativeReferenceName\":\"Median\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Median\"}}}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Median Sales Distribution by Country.'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 323.33,
+          "width": 435.00,
+          "x": 0.00,
+          "y": 576.67,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"c06d6a4e51060b748012\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":8000,\"width\":130,\"height\":133.33333333333334,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"alpha574647805626991.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 133.33,
+          "width": 130.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"f1e43fe01086434590b6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":145,\"y\":33.333333333333336,\"z\":9000,\"width\":480,\"height\":81.66666666666667,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Global Sales Report\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\",\"color\":\"#f1aa66\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 81.67,
+          "width": 480.00,
+          "x": 145.00,
+          "y": 33.33,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"f28433f216d5cd9cb537\",\"layouts\":[{\"id\":0,\"position\":{\"x\":435,\"y\":576.6666666666667,\"z\":3000,\"width\":845,\"height\":323.33333333333337,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"CalendarTable.Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sales in USD.Median\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalendarTable\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"CalendarTable.Date\",\"NativeReferenceName\":\"Date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Median\"},\"Name\":\"Sales in USD.Median\",\"NativeReferenceName\":\"Median\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":1,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"error\":[{\"properties\":{\"enabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Sales in USD.Median\"}}],\"forecast\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Forecast 1'\"}}},\"transform\":{\"algorithm\":\"Forecast\",\"parameters\":[{\"Literal\":{\"Value\":\"7D\"},\"Name\":\"Unit\"},{\"Literal\":{\"Value\":\"10D\"},\"Name\":\"ForecastLength\"},{\"Literal\":{\"Value\":\"0D\"},\"Name\":\"IgnoreLast\"},{\"Literal\":{\"Value\":\"0.95D\"},\"Name\":\"ConfidenceLevel\"}]}},\"selector\":{\"metadata\":\"Sales in USD.Median\",\"id\":\"1\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Median Sales Over Time.'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 323.33,
+          "width": 845.00,
+          "x": 435.00,
+          "y": 576.67,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"f75e5c0a668d668d9288\",\"layouts\":[{\"id\":0,\"position\":{\"x\":916.6666666666667,\"y\":33.333333333333336,\"z\":6000,\"width\":170,\"height\":100,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Sales in USD.Quantity Purchased)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Quantity Purchased\"}},\"Function\":0},\"Name\":\"Sum(Sales in USD.Quantity Purchased)\",\"NativeReferenceName\":\"Quantity Purchased\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Quantity Purchased\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Sales in USD.Quantity Purchased)\":{\"displayName\":\"Quantity Purchased\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.4}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.00,
+          "width": 170.00,
+          "x": 916.67,
+          "y": 33.33,
+          "z": 6000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Profit Overview.",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 900.00,
+      "name": "e475a3c3db328672e34e",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"226e60c075b330304641\",\"layouts\":[{\"id\":0,\"position\":{\"x\":145,\"y\":33.333333333333336,\"z\":8000,\"width\":480,\"height\":81.66666666666667,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Global Profit Report\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\",\"color\":\"#f1aa66\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 81.67,
+          "width": 480.00,
+          "x": 145.00,
+          "y": 33.33,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"3dcdddeeadce10a2813c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":7000,\"width\":130,\"height\":133.33333333333334,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"alpha574647805626991.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 133.33,
+          "width": 130.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"4e617fe84ac7c079787c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":906.6666666666667,\"y\":26.666666666666668,\"z\":4000,\"width\":210,\"height\":150,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Sales in USD.Net Revenue USD)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Net Revenue USD\"}},\"Function\":0},\"Name\":\"Sum(Sales in USD.Net Revenue USD)\",\"NativeReferenceName\":\"Sum of Net Revenue USD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Net Revenue USD\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.4}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 210.00,
+          "x": 906.67,
+          "y": 26.67,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"7718d15702ebdedbd58b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":738.3333333333334,\"y\":225,\"z\":1000,\"width\":661.6666666666667,\"height\":360,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sales in USD.Country Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sales in USD.Yearly Profit Margin\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Country Name\"},\"Name\":\"Sales in USD.Country Name\",\"NativeReferenceName\":\"Country Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Yearly Profit Margin\"},\"Name\":\"Sales in USD.Yearly Profit Margin\",\"NativeReferenceName\":\"Yearly Profit Margin\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Yearly Profit Margin\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, percent of total'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Yearly Profit Margin by Country'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 661.67,
+          "x": 738.33,
+          "y": 225.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"860581b3b07289e2c124\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1116.6666666666667,\"y\":0,\"z\":5000,\"width\":283.33333333333337,\"height\":205,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(Sales in USD.Gross Revenue USD)\"}],\"TrendLine\":[{\"queryRef\":\"CalendarTable.Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CalendarTable\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Gross Revenue USD\"}},\"Function\":0},\"Name\":\"Sum(Sales in USD.Gross Revenue USD)\",\"NativeReferenceName\":\"Gross Revenue USD\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"CalendarTable.Date\",\"NativeReferenceName\":\"Date\"}]},\"columnProperties\":{\"Sum(Sales in USD.Gross Revenue USD)\":{\"displayName\":\"Gross Revenue USD\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"goals\":[{\"properties\":{\"goalFontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.4}}}}}}}],\"indicator\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.4}}}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 205.00,
+          "width": 283.33,
+          "x": 1116.67,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"9d135c6999819186c3b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":133.33333333333334,\"z\":6000,\"width\":228.33333333333334,\"height\":91.66666666666667,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CalendarTable.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalendarTable\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"CalendarTable.Date\",\"NativeReferenceName\":\"Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 91.67,
+          "width": 228.33,
+          "x": 0.00,
+          "y": 133.33,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"9e7d87f4cd2d36662856\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":225,\"z\":0,\"width\":738.3333333333334,\"height\":360,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sales in USD.Product Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Sales in USD.Net Revenue USD)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Product Name\"},\"Name\":\"Sales in USD.Product Name\",\"NativeReferenceName\":\"Product Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Net Revenue USD\"}},\"Function\":0},\"Name\":\"Sum(Sales in USD.Net Revenue USD)\",\"NativeReferenceName\":\"Sum of Net Revenue USD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Net Revenue USD\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Net Revenue by Product.'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 738.33,
+          "x": 0.00,
+          "y": 225.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c1aa16942d75b789d702\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":585,\"z\":2000,\"width\":1400,\"height\":315,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"CalendarTable.Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sales in USD.Yearly Profit Margin\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalendarTable\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"CalendarTable.Date\",\"NativeReferenceName\":\"Date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Yearly Profit Margin\"},\"Name\":\"Sales in USD.Yearly Profit Margin\",\"NativeReferenceName\":\"Yearly Profit Margin\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Yearly Profit Margin over Time.'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 315.00,
+          "width": 1400.00,
+          "x": 0.00,
+          "y": 585.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"dc6d547eb2c605672c38\",\"layouts\":[{\"id\":0,\"position\":{\"x\":743.3333333333334,\"y\":31.666666666666668,\"z\":3000,\"width\":163.33333333333334,\"height\":145,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales in USD.Year-to-Date Profit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales in USD\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Year-to-Date Profit\"},\"Name\":\"Sales in USD.Year-to-Date Profit\",\"NativeReferenceName\":\"Year-to-Date Profit\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Year-to-Date Profit\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.4}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 145.00,
+          "width": 163.33,
+          "x": 743.33,
+          "y": 31.67,
+          "z": 3000.00
+        }
+      ],
+      "width": 1400.00
+    }
+  ],
+  "theme": "Solar"
+}

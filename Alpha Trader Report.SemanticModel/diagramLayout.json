@@ -1,0 +1,100 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 553.27727200000027,
+            "y": 471.84249300000033
+          },
+          "nodeIndex": "Purchases",
+          "nodeLineageTag": "08a3292c-9e91-4d88-99e4-cb82c30841e4",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 166.5
+          },
+          "nodeIndex": "Countries",
+          "nodeLineageTag": "3394130c-c158-46a2-9d06-a7ba59c451bb",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1061.0441980000003,
+            "y": 173.586244
+          },
+          "nodeIndex": "Exchange Data",
+          "nodeLineageTag": "d39ea036-f15e-4519-aa0e-94aca85d49d3",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 875.580533,
+            "y": 539.21544450000033
+          },
+          "nodeIndex": "CalendarTable",
+          "nodeLineageTag": "d2a53067-99dc-4ec5-a07c-7f43eb0dfdac",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 115.03062399999931,
+            "y": 158.13631850000007
+          },
+          "nodeIndex": "Sales",
+          "nodeLineageTag": "0bbaa00e-c99e-4531-8932-4dc21b4f4527",
+          "size": {
+            "height": 695.0581030000003,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1237.0998180000011,
+            "y": 420.92641950000035
+          },
+          "nodeIndex": "Sales in USD",
+          "nodeLineageTag": "3e83e555-11ba-4c8a-8d57-6245b9646990",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 56.447393005377691,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

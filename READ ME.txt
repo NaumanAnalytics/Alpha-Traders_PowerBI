@@ -1,0 +1,14 @@
+This report analyzes the global performance of Alpha Traders, a leading e-commerce group offering a wide range of products from electronics to household goods. The focus is on successful orders, represented by unreturned items. Python was leveraged to incorporate currency exchange data and DAX functions to calculate yearly profit margins and other key metrics.
+
+The report utilizes six data models:
+
+>> Sales
+>> Sales in USD
+>> Exchange Data
+>> CalendarTable
+>> Countries
+>> Purchases
+
+This revised introduction clarifies the purpose of the report and the specific focus on successful orders. It also highlights the technical aspects of your analysis using Python and DAX functionalities.
+
+Microsoft App link: https://app.powerbi.com/Redirect?action=OpenApp&appId=ad7a6f20-3467-4466-8b2c-2bcd48a1a9f5&ctid=23889f0d-8cb8-4096-9757-6b2a43313d2e
